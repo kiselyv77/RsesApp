@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">РСЭС</string>
+
+    <string name="title_home">Обычные</string>
+    <string name="title_dashboard">Отборные</string>
+    <string name="title_notifications">Фото</string>
+
+    <string name="anim_time">270</string>
+    <string name="simvols">
+        Аа Бб Вв Гг Дд Ее Ёё Жж
+        Зз Ии Йй Кк Лл Мм  Нн Оо
+        Пп Рр Сс Тт Уу Фф Хх Цц
+        Чч Шш Щщ Ъъ Ыы Ьь
+        Ээ Юю Яя 1234567890
+        Aa Bb Cc Dd Ee
+        Ff Gg Hh Ii Jj
+        Kk Ll Mm Nn Oo
+        Pp Qq Rr Ss Tt Uu
+        Vv Ww Xx Yy Zz
+        .,?!"':;
+    </string>
+    <string name="info">
+        Издание РСЭС<br />
+        Разработчик kiselyv77<br />
+        Версия 1.0<br />
+        <br />
+        Внимание, приложение находится в стадии активной разработки, при возникновении проблем пожалуйста свяжитесь с разработчиками!<br />
+        (разработчиком)<br />
+    </string>
+
+    <string name="info2">
+        При потдержке:<br />
+        armPartyRses®<br />
+        bakeRses®
+    </string>
+    <string name="ip">192.168.43.112</string>
+</resources>

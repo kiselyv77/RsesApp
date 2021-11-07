@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/click_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_form"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:hint="Название"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/rses" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/pick_image"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray"
+        android:text="Image"
+        app:layout_constraintEnd_toEndOf="@+id/name_form"
+        app:layout_constraintStart_toStartOf="@+id/name_form"
+        app:layout_constraintTop_toBottomOf="@+id/name_form" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/gray"
+        android:text="Добавить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollYear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scrollYear" />
+
+    <ScrollView
+        android:id="@+id/scrollYear"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="@+id/pick_image"
+        app:layout_constraintStart_toStartOf="@+id/pick_image">
+
+        <RadioGroup
+            android:id="@+id/radioGroupYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/year2016"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016" />
+
+            <RadioButton
+                android:id="@+id/year2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017" />
+
+            <RadioButton
+                android:id="@+id/year2018"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2018" />
+
+            <RadioButton
+                android:id="@+id/year2019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019" />
+
+            <RadioButton
+                android:id="@+id/year2020"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2020" />
+
+            <RadioButton
+                android:id="@+id/year2021"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="2021" />
+
+        </RadioGroup>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/tvImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_image"
+        app:srcCompat="@drawable/bottom_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
